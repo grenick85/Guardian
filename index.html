@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SANCTUM_716 // DISTRIBUTION_NODE</title>
-    <style>
-        body { margin: 0; background: #05060a; color: #f5f5f5; font-family: 'Courier New', monospace; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
-        header { border-bottom: 2px solid #f97316; padding-bottom: 1.5rem; margin-bottom: 3rem; text-align: center; }
-        .logo { font-weight: bold; letter-spacing: 0.4em; color: #f97316; font-size: 1.2rem; text-transform: uppercase; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; }
-        .card { background: #111827; border: 1px solid #1e293b; padding: 2rem; border-radius: 12px; transition: 0.3s; display: flex; flex-direction: column; }
-        .card:hover { border-color: #f97316; transform: translateY(-8px); box-shadow: 0 10px 30px rgba(249, 115, 22, 0.1); }
-        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid #334155; }
-        .card h3 { margin: 0 0 0.5rem 0; color: #ffffff; font-size: 1.4rem; }
-        .card p { font-size: 0.9rem; color: #9ca3af; margin-bottom: 1.5rem; flex-grow: 1; }
-        .price { color: #f97316; font-size: 1.8rem; font-weight: bold; margin-bottom: 1rem; }
-        .btn { display: block; background: #f97316; color: #05060a; text-align: center; padding: 1rem; border-radius: 6px; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; }
-        .status { font-size: 0.75rem; color: #4b5563; margin-top: 1.2rem; text-transform: uppercase; }
-        footer { margin-top: 5rem; text-align: center; color: #374151; font-size: 0.8rem; }
-    </style>
+  <meta charset="UTF-8">
+  <title>NRG Guardian – Resident Desktop Co‑Pilot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #05060a; color: #f5f5f5; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    header { padding: 1.5rem 0 2rem; }
+    .logo { font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; color: #9ca3af; }
+    h1 { font-size: 2.6rem; line-height: 1.1; margin: 0.75rem 0 0.5rem; }
+    h2 { font-size: 1.25rem; font-weight: 500; color: #d1d5db; margin: 0 0 1.5rem; }
+    p { line-height: 1.6; color: #e5e7eb; margin: 0 0 1rem; }
+    .pill { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.75rem; border-radius: 999px; background: rgba(148, 163, 184, 0.12); color: #9ca3af; font-size: 0.8rem; }
+    .pill span { width: 6px; height: 6px; border-radius: 999px; background: #22c55e; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 2rem 0 2.5rem; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.8rem 1.4rem; border-radius: 999px; border: 1px solid transparent; font-size: 0.95rem; cursor: pointer; text-decoration: none; transition: background 0.15s ease; }
+    .btn-primary { background: #f97316; color: #05060a; font-weight: 600; }
+    .btn-primary:hover { background: #ea580c; }
+    .btn-ghost { border-color: #4b5563; color: #e5e7eb; }
+    .btn-ghost:hover { background: rgba(148, 163, 184, 0.12); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+    .card { padding: 1.25rem 1.1rem; border-radius: 0.9rem; background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(55, 65, 81, 0.9); }
+    .card h3 { margin: 0 0 0.4rem; font-size: 1rem; }
+    .card p { font-size: 0.9rem; color: #d1d5db; }
+    footer { margin-top: 3rem; font-size: 0.8rem; color: #6b7280; }
+    a { color: #f97316; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">ARCHITECT_VAULT // ASSET_DEPLOYMENT</div>
-        </header>
-
-        <div class="grid">
-            <div class="card">
-                <img src="NRG Guardian etherea.png" alt="NRG Guardian Security Daemon">
-                <h3>NRG Guardian</h3>
-                <p>Ethical, metadata-only security automation. 365-day mortality. Privacy-first resident daemon.</p>
-                <div class="price">$5.00</div>
-                <a href="paypal.html" class="btn">ACQUIRE ACCESS</a>
-                <div class="status">Type: .PY / Digital Asset</div>
-            </div>
-
-            <div class="card">
-                <img src="Bullshirt.png" alt="Architect Bullshirt Physical Merch">
-                <h3>Architect "Bullshirt"</h3>
-                <p>Official physical asset. High-velocity apparel for those who build their own reality.</p>
-                <div class="price">$25.00</div>
-                <a href="paypal.html" class="btn">SECURE MERCH</a>
-                <div class="status">Type: Physical Asset / Limited Run</div>
-            </div>
-
-            <div class="card" style="opacity: 0.4;">
-                <div style="height: 200px; background: #0f172a; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: #1e293b; font-size: 3rem;">?</div>
-                <h3>Sovereign-Strike</h3>
-                <p>Advanced predictive shell. Encrypted tournament protocols.</p>
-                <div class="price">--.--</div>
-                <a href="#" class="btn" style="background: #1f2937; color: #4b5563; cursor: not-allowed;">LOCKED</a>
-                <div class="status">Status: Metadata Training...</div>
-            </div>
+  <div class="wrap">
+    <header>
+      <div class="logo">NRG GUARDIAN</div>
+    </header>
+    <main>
+      <div class="pill">
+        <span></span>
+        Local‑first. Narratable. Yours.
+      </div>
+      <h1>Resident desktop co‑pilot for creators and system architects.</h1>
+      <h2>Guardian is an ethical, modular automation layer that lives on your machine—so your workflows stay powerful, private, and narratable.</h2>
+      <div class="cta-row">
+        <a href="mailto:Nickygreen85@gmail.com" class="btn btn-ghost">Request early access key</a>
+        <a href="https://www.paypal.com/ncp/payment/EFEL6PRSKEXL2" class="btn btn-primary">Buy NRG Guardian — $5</a>
+      </div>
+      <section>
+        <p><strong>Own your automation.</strong> Guardian runs as a resident co‑pilot on your desktop, orchestrating scripts, tools, and rituals without shipping your data off to someone else’s cloud.</p>
+        <p><strong>Designed for builders.</strong> If you think in systems, layers, and narratives, Guardian gives you a place to wire it all together—cleanly, safely, and on your terms.</p>
+      </section>
+      <section class="grid">
+        <div class="card">
+          <h3>Local‑first by design</h3>
+          <p>Guardian lives on your machine. Your workflows, logs, and rituals stay under your control—not a remote server’s.</p>
         </div>
-
-        <footer>
-            © 2026 // SYSTEM_716 // NIAGARA FALLS NODE
-        </footer>
-    </div>
+        <div class="card">
+          <h3>Modular automation</h3>
+          <p>Wire scripts, daemons, and tools into a single narratable layer. Start small, grow into orchestration.</p>
+        </div>
+        <div class="card">
+          <h3>Ethical by default</h3>
+          <p>No dark patterns, no manipulative upsells, no data harvesting. Guardian is built to respect you.</p>
+        </div>
+        <div class="card">
+          <h3>Built for narrative ops</h3>
+          <p>Every action can be a scene: log it, name it, ritualize it. Turn chaos into a story you can steer.</p>
+        </div>
+      </section>
+      <footer>
+        <p>NRG Guardian is currently in active development with a small circle of early users. If you want in early—or want to embed Guardian into your own ecosystem—reach out at <a href="mailto:Nickygreen85@gmail.com">Nickygreen85@gmail.com</a>.</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
